@@ -1,0 +1,24 @@
+Linguas: Francês, Espanhol, Inglês, Português;
+
+Atividades:
+    Hora da rodinha;
+    Lavar as maos;
+    Escovar os dentes;
+    Higiene pessoal;
+    Hora do lanche; 
+    Hora de brincar;
+    Hora de guardar os brinquedos;
+    Vamos para pracinha;
+    Hora do almoco;
+    Hora de ir para casa;
+    Hora de entrar na sala;
+    Arrumar a mochila;
+    Encher a garrafa de agua;
+    Aula de informatica;
+    Aula de educacao fisica;
+
+Criar perfil por crianca inclusiva;
+
+Traducao automatica da fala (alguma API)
+com selecao de lingu;
+
