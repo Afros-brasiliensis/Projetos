@@ -20,5 +20,6 @@ Atividades:
 Criar perfil por crianca inclusiva;
 
 Traducao automatica da fala (alguma API)
-com selecao de lingu;
+com selecao de lingua;
+
 
