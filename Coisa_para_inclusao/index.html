@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Rotina Inclusiva</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-top">
+                <div class="profile-section">
+                    <div class="profile-image-container">
+                        <div class="profile-image-pulse"></div>
+                        <div class="profile-image-wrapper">
+                            <img alt="Child profile avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOCudPftzwPbl2xGwfkSxAUwza3mAPYoGO9nZDbyAst7admbD9UZNGPHYvonrthLEhfwnn6O-ZUcHjXn44rkXVOxmfaAwJC3lHaaBNOVwYf-SeE_lxSPomuTIHlZWdKANPBZRPDTfsgK0tTqYnND_sa7BkJ7SMDhrOn2-iNbGBTdat6Px-sTviHvDScG4bPYOwbdU9j823FLMh0twfbNB5ODUfbk1aOvrSt-51UXn7piPBZGJlu12jIykK6d07To8zFDOpnLYV4j3w" />
+                        </div>
+                    </div>
+                    <div>
+                        <p class="greeting-text" data-i18n="morning_route">Morning Route</p>
+                        <h1 class="greeting-name" data-i18n="hi_leo">Hi, Leo! 👋</h1>
+                    </div>
+                </div>
+                <button class="notifications-btn">
+                    <span class="material-symbols-outlined">notifications</span>
+                </button>
+            </div>
+            
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="en">
+                    <span class="flag">🇺🇸</span>
+                    <span class="lang-name">English</span>
+                </button>
+                <button class="lang-btn" data-lang="fr">
+                    <span class="flag">🇫🇷</span>
+                    <span class="lang-name">Français</span>
+                </button>
+                <button class="lang-btn" data-lang="es">
+                    <span class="flag">🇪🇸</span>
+                    <span class="lang-name">Español</span>
+                </button>
+                <button class="lang-btn" data-lang="pt">
+                    <span class="flag">🇧🇷</span>
+                    <span class="lang-name">Português</span>
+                </button>
+            </div>
+        </header>
+
+        <main class="main-content no-scrollbar">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="material-symbols-outlined section-icon">auto_awesome</span>
+                    <span class="section-text" data-i18n="todays_adventure">Today's Adventure</span>
+                </h2>
+                <span class="task-count" data-i18n="tasks_count">8 Tasks</span>
+            </div>
+
+            <div class="routine-grid">
+                <div class="glass-card">
+                    <div class="card-icon-wrapper blue">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">groups</span>
+                    </div>
+                    <p class="card-title" data-i18n="task_circle_time">Circle Time</p>
+                    <div class="card-time-wrapper blue"><p>08:00 AM</p></div>
+                </div>
+                
+                <div class="glass-card">
+                    <div class="card-icon-wrapper cyan">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">water_drop</span>
+                    </div>
+                    <p class="card-title" data-i18n="task_wash_hands">Wash Hands</p>
+                    <div class="card-time-wrapper cyan"><p>09:15 AM</p></div>
+                </div>
+
+                <div class="glass-card">
+                    <div class="card-icon-wrapper indigo">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">cleaning_services</span>
+                    </div>
+                    <p class="card-title" data-i18n="task_brush_teeth">Brush Teeth</p>
+                    <div class="card-time-wrapper indigo"><p>09:30 AM</p></div>
+                </div>
+
+                <div class="glass-card">
+                    <div class="card-icon-wrapper orange">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">cookie</span>
+                    </div>
+                    <p class="card-title" data-i18n="task_snack_time">Snack Time</p>
+                    <div class="card-time-wrapper orange"><p>10:00 AM</p></div>
+                </div>
+
+                <div class="glass-card">
+                    <div class="card-icon-wrapper violet">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">toys</span>
+                    </div>
+                    <p class="card-title" data-i18n="task_play_time">Play Time</p>
+                    <div class="card-time-wrapper violet"><p>10:30 AM</p></div>
+                </div>
+
+                <div class="glass-card">
+                    <div class="card-icon-wrapper emerald">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">forest</span>
+                    </div>
+                    <p class="card-title" data-i18n="task_park_trip">Park Trip</p>
+                    <div class="card-time-wrapper emerald"><p>11:30 AM</p></div>
+                </div>
+
+                <div class="glass-card">
+                    <div class="card-icon-wrapper rose">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">restaurant</span>
+                    </div>
+                    <p class="card-title" data-i18n="task_lunch">Lunch</p>
+                    <div class="card-time-wrapper rose"><p>12:30 PM</p></div>
+                </div>
+
+                <div class="glass-card">
+                    <div class="card-icon-wrapper amber">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">house</span>
+                    </div>
+                    <p class="card-title" data-i18n="task_go_home">Go Home</p>
+                    <div class="card-time-wrapper amber"><p>03:00 PM</p></div>
+                </div>
+            </div>
+
+            <div class="mic-section">
+                <div class="mic-container">
+                    <div class="mic-pulse-bg"></div>
+                    <button class="mic-button">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">mic</span>
+                    </button>
+                    <div class="mic-label">
+                        <p data-i18n="tap_to_speak">Tap to Speak</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="spacer"></div>
+        </main>
+
+        <nav class="bottom-nav">
+            <a class="nav-item active" href="#">
+                <span class="material-symbols-outlined icon" style="font-variation-settings: 'FILL' 1">home</span>
+                <span class="label" data-i18n="nav_home">Home</span>
+            </a>
+            <a class="nav-item" href="#">
+                <span class="material-symbols-outlined icon">schedule</span>
+                <span class="label" data-i18n="nav_plan">Plan</span>
+            </a>
+            <a class="nav-item" href="#">
+                <span class="material-symbols-outlined icon">star_rate</span>
+                <span class="label" data-i18n="nav_rewards">Rewards</span>
+            </a>
+            <a class="nav-item" href="#">
+                <span class="material-symbols-outlined icon">person_outline</span>
+                <span class="label" data-i18n="nav_profile">Profile</span>
+            </a>
+        </nav>
+    </div>
+</body>
+</html>
