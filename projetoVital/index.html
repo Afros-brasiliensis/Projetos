@@ -3,48 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website de Chamada de Ambulância</title>
-    <link rel="stylesheet" href="projetoVital/style.css">
+    <title>Projeto Vital - Chamada de Ambulância</title>
+    <meta name="description" content="Plataforma de chamada de ambulância rápida e eficiente.">
+    <!-- Google Fonts for a friendly, modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Chamada de Ambulância</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#como-funciona">Como Funciona</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#e64a45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                </svg>
+                <span>Projeto<strong>Vital</strong></span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#como-funciona" class="nav-link">Como Funciona</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="#chamar" class="btn btn-outline">Solicitar Ajuda</a>
+        </div>
     </header>
 
     <main>
-        <section id="sobre">
-            <h2>Sobre</h2>
-            <p>Este site é uma plataforma de chamada de ambulância para ajudar os pacientes a se comunicarem com o sistema de saúde local.</p>
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h1>Saúde e rapidez <br>quando você mais precisa.</h1>
+                    <p>Conectamos você imediatamente ao sistema de saúde local. Nossa plataforma de chamada de ambulância garante atendimento rápido, seguro e eficiente.</p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary btn-large toggle-pulse">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            Chamar Ambulância
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Custom SVG Illustration reflecting the provided images -->
+                    <svg viewBox="0 0 400 400" width="100%" height="100%">
+                        <!-- Cloud/Background blob -->
+                        <path fill="#ffffff" opacity="0.6" d="M346.5,232.5 C360,200 375,170 350,140 C325,110 280,110 250,90 C220,70 190,50 150,60 C110,70 80,100 60,140 C40,180 50,230 70,270 C90,310 130,340 180,350 C230,360 280,340 310,300 C340,260 333,265 346.5,232.5 Z" />
+                        
+                        <!-- Heart Core -->
+                        <path fill="#e64a45" d="M200,280 C200,280 100,210 100,150 C100,110 130,80 170,80 C185,80 200,90 200,100 C200,90 215,80 230,80 C270,80 300,110 300,150 C300,210 200,280 200,280 Z" />
+                        
+                        <!-- Health Pulse on Heart -->
+                        <path fill="none" stroke="#f3f2ea" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" d="M130,160 L160,160 L175,120 L200,210 L220,150 L240,180 L260,160 L280,160" />
+                        
+                        <!-- Stethoscope Tube -->
+                        <path fill="none" stroke="#1e3b5a" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" d="M120,130 C70,130 50,200 80,260 C110,320 180,360 250,320 C290,290 320,250 320,230" />
+                        
+                        <!-- Stethoscope Earpieces -->
+                        <path fill="none" stroke="#1e3b5a" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" d="M120,130 C120,80 140,40 170,40" />
+                        <circle cx="170" cy="40" r="8" fill="#1e3b5a" />
+                        
+                        <!-- Stethoscope Chestpiece -->
+                        <circle cx="320" cy="230" r="22" fill="#a0c4d8" stroke="#1e3b5a" stroke-width="12" />
+                        <circle cx="320" cy="230" r="8" fill="#1e3b5a" />
+
+                        <!-- Decorative Green Leaf -->
+                        <path fill="#438b55" d="M280,90 C300,60 330,60 340,70 C350,80 350,110 320,130 C300,140 280,130 270,120 C260,110 260,100 280,90 Z" />
+                        
+                        <!-- Mini Apple -->
+                        <path fill="#ff6b6b" d="M310,130 C300,130 290,140 290,150 C290,165 310,175 310,175 C310,175 330,165 330,150 C330,140 320,130 310,130 Z" />
+                    </svg>
+                </div>
+            </div>
         </section>
 
-        <section id="como-funciona">
-            <h2>Como Funciona</h2>
-            <ol>
-                <li>Clique no botão "Chamar Ambulância" para iniciar uma chamada.</li>
-                <li>Fale com o atendente sobre sua situação e os detalhes da emergência.</li>
-                <li>A ambulância será encaminhada imediatamente.</li>
-            </ol>
+        <section id="sobre" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Sobre o Projeto Vital</h2>
+                    <p>Sua vida na palma da mão.</p>
+                </div>
+                <div class="about-grid">
+                    <div class="card">
+                        <div class="icon-wrapper">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1e3b5a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <h3>Rápido e Preciso</h3>
+                        <p>Nosso sistema reduz o tempo de resposta das ambulâncias, enviando a unidade mais próxima até você através de geolocalização.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon-wrapper">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1e3b5a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </div>
+                        <h3>Cuidado Garantido</h3>
+                        <p>Trabalhamos apenas com profissionais de saúde qualificados e ambulâncias equipadas para qualquer tipo de emergência avançada.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon-wrapper">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1e3b5a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3>Segurança Máxima</h3>
+                        <p>Seus dados de saúde estão seguros conosco e são compartilhados apenas com a equipe médica que irá lhe atender.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Se tiver alguma dúvida ou precisar de mais informações, entre em contato conosco:</p>
-            <ul>
-                <li>Email: contato@ambulancia.com.br</li>
-                <li>Tel: (11) 98765-4321</li>
-            </ul>
+        <section id="como-funciona" class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Como Funciona</h2>
+                    <p>Em apenas 3 passos, a ajuda estará a caminho.</p>
+                </div>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <h3>Acione a Emergência</h3>
+                        <p>Clique no botão vermelho e informe rapidamente sua situação.</p>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <h3>Atendimento Rápido</h3>
+                        <p>Um de nossos especialistas validará os dados e guiará os primeiros socorros.</p>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <div class="step-num">3</div>
+                        <h3>Ambulância a Caminho</h3>
+                        <p>A unidade móvel mais próxima será notificada e enviada imediatamente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section">
+            <div class="container contact-container">
+                <div class="contact-card">
+                    <h2>Ficou com dúvidas?</h2>
+                    <p>Entre em contato com a nossa equipe corporativa. Responderemos o mais rápido possível.</p>
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> contato@projetovital.com.br</p>
+                        <p><strong>Tel:</strong> (11) 98765-4321</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Website de Chamada de Ambulância. Todos os direitos reservados.</p>
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#e64a45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                </svg>
+                <span>Projeto<strong>Vital</strong></span>
+            </div>
+            <p>&copy; 2023 Projeto Vital. Todos os direitos reservados. Feito para salvar vidas.</p>
+        </div>
     </footer>
 </body>
 </html>
